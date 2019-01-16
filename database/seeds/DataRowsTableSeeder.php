@@ -7,7 +7,7 @@ use TCG\Voyager\Models\DataType;
 class DataRowsTableSeeder extends Seeder
 {
     /**
-     * Auto generated seed file.
+     * Auto generated seed files.
      */
     public function run()
     {
