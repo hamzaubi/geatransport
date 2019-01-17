@@ -10,12 +10,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// route to main main page index 
 Route::get('/', function () {
     return view('welcome');
 });
+
+// route to save transport requests
 Route::get('/insert', 'MissionController@saveit');
 
+// adming access route 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
