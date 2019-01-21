@@ -195,9 +195,12 @@
         window.onload = getthemonth;
         function getthemonth(){
             var date = new Date();
+            // month plus 4 ( text boxes counting starts from 0 however 
+            // month text boxes startes from 4 ( 4 is jan , 5 feb))
             var month = date.getMonth()+4;
             var textboxes = document.getElementsByTagName("input");
             for (var i =0; i<textboxes.length ; i++){
+                //textboxes.text(i);
              if(i == month){
                  textboxes[i].required=true;
                  textboxes[i].readOnly=false;
@@ -212,9 +215,6 @@
                  textboxes[1].disabled=false; 
                  textboxes[2].disabled=false;   
                  textboxes[3].readOnly=false;   
-              
-                   
-                
              }else{
               textboxes[i].readOnly = true;
           }

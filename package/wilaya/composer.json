@@ -1,0 +1,8 @@
+{
+    "name": "micha/dzstates",
+    "description": "this package include a list of the algerian states along with infos like sub states and more info",
+    "type": "library",
+    "license": "mit",
+    "minimum-stability": "dev",
+    "require": {}
+}
